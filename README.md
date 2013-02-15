@@ -1,4 +1,4 @@
-[![Nyan Cat result printer for PHPUnit](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.png)](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.png)
+[![Nyan Cat result printer for PHPUnit](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.gif)](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.gif)
 
 ## Requirements
 
