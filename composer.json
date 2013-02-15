@@ -1,0 +1,30 @@
+{
+    "name": "whatthejeff/nyancat-phpunit-resultprinter",
+    "description": "Nyan Cat Result Printer for PHPUnit",
+    "keywords": ["nyan","cat","rainbow","phpunit","tests"],
+    "homepage": "http://github.com/whatthejeff/nyancat-phpunit-resultprinter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Welch",
+            "email": "whatthejeff@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "whatthejeff/fab": ">=1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "NyanCat": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
