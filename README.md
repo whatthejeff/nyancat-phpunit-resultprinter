@@ -1,6 +1,3 @@
-Nyan Cat result printer for PHPUnit
-===================================
-
 [![Nyan Cat result printer for PHPUnit](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.png)](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.png)
 
 ## Requirements
