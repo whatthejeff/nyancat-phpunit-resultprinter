@@ -1,13 +1,15 @@
-Nyan Cat Result Printer for PHPUnit
+Nyan Cat result printer for PHPUnit
 ===================================
+
+[![Nyan Cat result printer for PHPUnit](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.png)](https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.png)
 
 ## Requirements
 
-The Nyan Cat Result Printer for PHPUnit works with PHP 5.3.3 or later.
+The Nyan Cat result printer for PHPUnit works with PHP 5.3.3 or later.
 
 ## Installation
 
-The recommended way to install the Nyan Cat Result Printer for PHPUnit is
+The recommended way to install the Nyan Cat result printer for PHPUnit is
 [through composer](http://getcomposer.org). Just create a `composer.json` file
 and run the `php composer.phar install --dev` command to install it:
 
@@ -25,9 +27,9 @@ Once installed, add the following attributes to the `<phpunit>` element in your
 
 ## Acknowledgements
 
-The Nyan Cat Result Printer for PHPUnit was __heavily__ inspired by the
+The Nyan Cat result printer for PHPUnit was __heavily__ inspired by the
 glorious [mocha/nyan.js](https://github.com/visionmedia/mocha/blob/master/lib/reporters/nyan.js).
 
 ## License
 
-Nyan Cat Result Printer for PHPUnit is licensed under the [MIT license](LICENSE).
+The Nyan Cat result printer for PHPUnit is licensed under the [MIT license](LICENSE).

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the NyanCat PHPUnit Result Printer.
+ * This file is part of the Nyan Cat result printer for PHPUnit.
  *
  * (c) Jeff Welch <whatthejeff@gmail.com>
  *

@@ -1,6 +1,6 @@
 {
     "name": "whatthejeff/nyancat-phpunit-resultprinter",
-    "description": "Nyan Cat Result Printer for PHPUnit",
+    "description": "Nyan Cat result printer for PHPUnit",
     "keywords": ["nyan","cat","rainbow","phpunit","tests"],
     "homepage": "http://github.com/whatthejeff/nyancat-phpunit-resultprinter",
     "license": "MIT",
