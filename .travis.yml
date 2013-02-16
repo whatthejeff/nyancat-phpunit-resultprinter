@@ -2,8 +2,6 @@ language: php
 
 before_script:
     - composer install --prefer-source --dev
-    - git clone --branch=master --depth=100 --quiet git://github.com/pear/pear-core.git vendor/pear-core
-    - git clone --branch=trunk --depth=100 --quiet git://github.com/pear/Console_Getopt.git vendor/console-getopt
 
 script: vendor/bin/phpunit
 
