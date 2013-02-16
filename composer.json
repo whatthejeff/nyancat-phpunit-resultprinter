@@ -9,14 +9,21 @@
             "name": "Jeff Welch",
             "email": "whatthejeff@gmail.com"
         }
-    ],
+    ], 
     "require": {
         "php": ">=5.3.3",
         "whatthejeff/fab": ">=1.0.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "3.7.*",
+        "pear-pear/pear": "1.9.4"
     },
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.php.net"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "NyanCat": "src/"
