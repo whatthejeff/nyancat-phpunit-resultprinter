@@ -22,6 +22,15 @@ Once installed, add the following attributes to the `<phpunit>` element in your
     printerFile="vendor/whatthejeff/nyancat-phpunit-resultprinter/src/NyanCat/PHPUnit/ResultPrinter.php"
     printerClass="NyanCat\PHPunit\ResultPrinter"
 
+## Tests
+
+[![Build Status](https://travis-ci.org/whatthejeff/nyancat-phpunit-resultprinter.png?branch=master)](https://travis-ci.org/whatthejeff/nyancat-phpunit-resultprinter)
+
+To run the test suite, you need [composer](http://getcomposer.org).
+
+    $ php composer.phar install --dev
+    $ vendor/bin/phpunit
+
 ## Acknowledgements
 
 The Nyan Cat result printer for PHPUnit was __heavily__ inspired by the
