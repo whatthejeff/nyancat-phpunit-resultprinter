@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         printerFile="src/NyanCat/PHPUnit/ResultPrinter.php"
+         printerClass="NyanCat\PHPunit\ResultPrinter"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="vendor/autoload.php"
+>
+    <testsuites>
+        <testsuite name="Nyan Cat result printer for PHPUnit Test Suite">
+            <directory suffix=".phpt">./tests/NyanCat/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
