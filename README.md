@@ -10,11 +10,13 @@ The recommended way to install the Nyan Cat result printer for PHPUnit is
 [through composer](http://getcomposer.org). Just create a `composer.json` file
 and run the `php composer.phar install --dev` command to install it:
 
-    {
-        "require-dev": {
-            "whatthejeff/nyancat-phpunit-resultprinter": "1.0.*@dev"
-        }
+~~~json
+{
+    "require-dev": {
+        "whatthejeff/nyancat-phpunit-resultprinter": "~1.1"
     }
+}
+~~~
 
 Once installed, add the following attributes to the `<phpunit>` element in your
 `phpunit.xml` file:
