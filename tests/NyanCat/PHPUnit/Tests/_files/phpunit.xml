@@ -5,7 +5,7 @@
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
-         printerFile="src/NyanCat/PHPUnit/ResultPrinter.php"
+         printerFile="../../../../../src/NyanCat/PHPUnit/ResultPrinter.php"
          printerClass="NyanCat\PHPunit\ResultPrinter"
          processIsolation="false"
          stopOnFailure="false"

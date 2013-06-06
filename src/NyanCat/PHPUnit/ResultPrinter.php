@@ -225,6 +225,10 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      */
     protected function writeProgress($progress)
     {
+        if($this->debug) {
+            return parent::writeProgress($progress);
+        }
+
         $this->appendRainbow();
         $this->drawScoreboard();
         $this->drawRainbow();
@@ -237,7 +241,13 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      */
     protected function printHeader()
     {
-        $this->write("\n\n\n\n");
+        if (!$this->debug) {
+            if (count($this->trajectories[0]) === 0) {
+                $this->writeProgress('end');
+            }
+            $this->write("\n\n\n\n");
+        }
+
         parent::printHeader();
     }
 
@@ -246,6 +256,10 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      */
     public function addError(\PHPUnit_Framework_Test $test, \Exception $e, $time)
     {
+        if ($this->debug) {
+            return parent::addError($test, $e, $time);
+        }
+
         $this->stats['failures']++;
         $this->writeProgress('fail');
         $this->lastTestFailed = TRUE;
@@ -256,6 +270,10 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      */
     public function addFailure(\PHPUnit_Framework_Test $test, \PHPUnit_Framework_AssertionFailedError $e, $time)
     {
+        if ($this->debug) {
+            return parent::addFailure($test, $e, $time);
+        }
+
         $this->stats['failures']++;
         $this->writeProgress('fail');
         $this->lastTestFailed = TRUE;
@@ -266,6 +284,10 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      */
     public function addIncompleteTest(\PHPUnit_Framework_Test $test, \Exception $e, $time)
     {
+        if ($this->debug) {
+            return parent::addIncompleteTest($test, $e, $time);
+        }
+
         $this->stats['pending']++;
         $this->writeProgress('pending');
         $this->lastTestFailed = TRUE;
@@ -276,6 +298,10 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      */
     public function addSkippedTest(\PHPUnit_Framework_Test $test, \Exception $e, $time)
     {
+        if ($this->debug) {
+            return parent::addSkippedTest($test, $e, $time);
+        }
+
         $this->stats['pending']++;
         $this->writeProgress('pending');
         $this->lastTestFailed = TRUE;
@@ -286,6 +312,10 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      */
     public function startTestSuite(\PHPUnit_Framework_TestSuite $suite)
     {
+        if ($this->debug) {
+            return parent::startTestSuite($suite);
+        }
+
         if ($this->numTests == -1) {
             parent::startTestSuite($suite);
             $this->trajectoryWidthMax = $this->maxColumn - $this->nyanCatWidth;
@@ -296,22 +326,12 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function endTestSuite(\PHPUnit_Framework_TestSuite $suite)
-    {
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function startTest(\PHPUnit_Framework_Test $test)
-    {
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function endTest(\PHPUnit_Framework_Test $test, $time)
     {
+        if ($this->debug) {
+            return parent::endTest($test, $time);
+        }
+
         if (!$this->lastTestFailed) {
             $this->stats['passes']++;
             $this->writeProgress('pass');
