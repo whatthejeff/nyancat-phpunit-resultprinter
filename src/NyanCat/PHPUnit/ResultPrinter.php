@@ -36,26 +36,19 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
      * @var NyanCat\Scoreboard
      */
     private $scoreboard;
-    /**
-     * The Nyan Cat rainbow.
-     *
-     * @var NyanCat\Scoreboard
-     */    
-    private $rainbow;
 
     /**
      * {@inheritdoc}
      */
     public function __construct($out = NULL, $verbose = FALSE, $colors = FALSE, $debug = FALSE)
     {
-        $this->rainbow = new Rainbow(
-            FabFactory::getFab(
-                empty($_SERVER['TERM']) ? 'unknown' : $_SERVER['TERM']
-            )
-        );
         $this->scoreboard = new Scoreboard(
             new Cat(),
-            $this->rainbow,
+            new Rainbow(
+                FabFactory::getFab(
+                    empty($_SERVER['TERM']) ? 'unknown' : $_SERVER['TERM']
+                )
+            ),
             array(
                 new Team('pass', 'green', '^'),
                 new Team('fail', 'red', 'o'),
@@ -86,10 +79,10 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     protected function printHeader()
     {
         if (!$this->debug) {
-            if ($this->rainbow->getWidth() === 0) {
+            if (!$this->scoreboard->isRunning()) {
                 $this->scoreboard->start();
             }
-            $this->scoreboard->end();
+            $this->scoreboard->stop();
         }
 
         parent::printHeader();
