@@ -22,7 +22,7 @@ Once installed, add the following attributes to the `<phpunit>` element in your
 `phpunit.xml` file:
 
     printerFile="vendor/whatthejeff/nyancat-phpunit-resultprinter/src/NyanCat/PHPUnit/ResultPrinter.php"
-    printerClass="NyanCat\PHPunit\ResultPrinter"
+    printerClass="NyanCat\PHPUnit\ResultPrinter"
 
 ## Tests
 

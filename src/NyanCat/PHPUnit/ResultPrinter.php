@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace NyanCat\PHPunit;
+namespace NyanCat\PHPUnit;
 
 use NyanCat\Cat;
 use NyanCat\Rainbow;
