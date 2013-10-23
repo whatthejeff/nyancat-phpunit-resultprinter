@@ -366,7 +366,6 @@ There were 5 errors:
 
 --
 
-
 There were 5 failures:
 
 1) ResultPrinterTest::testFailure

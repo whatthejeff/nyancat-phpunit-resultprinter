@@ -39,7 +39,6 @@ There was 1 error:
 
 --
 
-
 There was 1 failure:
 
 1) ResultPrinterTest::testFailure
