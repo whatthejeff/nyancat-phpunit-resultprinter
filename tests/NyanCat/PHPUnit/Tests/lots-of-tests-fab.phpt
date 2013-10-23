@@ -393,8 +393,6 @@ Failed asserting that false is true.
 Failed asserting that false is true.
 
 %s:%i
-
-[37;41m[2KFAILURES!
-[0m[37;41m[2KTests: 25, Assertions: 10, Failures: 5, Errors: 5, Incomplete: 5, Skipped: 5.
-[0m[2K
-
+[37;41m                                                                             [0m
+[37;41mFAILURES!                                                                    [0m
+[37;41mTests: 25, Assertions: 10, Failures: 5, Errors: 5, Incomplete: 5, Skipped: 5.[0m
