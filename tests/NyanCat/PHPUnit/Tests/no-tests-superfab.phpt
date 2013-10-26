@@ -37,5 +37,4 @@ Configuration read from %s
 
 Time: %i %s, Memory: %sMb
 
-[30;43m[2KNo tests executed!
-[0m[2K
+[30;43mNo tests executed![0m

@@ -104,15 +104,13 @@ There was 1 error:
 
 --
 
-
 There was 1 failure:
 
 1) ResultPrinterTest::testFailure
 Failed asserting that false is true.
 
 %s:%i
-
-[37;41m[2KFAILURES!
-[0m[37;41m[2KTests: 5, Assertions: 2, Failures: 1, Errors: 1, Incomplete: 1, Skipped: 1.
-[0m[2K
+[37;41m                                                                           [0m
+[37;41mFAILURES!                                                                  [0m
+[37;41mTests: 5, Assertions: 2, Failures: 1, Errors: 1, Incomplete: 1, Skipped: 1.[0m
 
