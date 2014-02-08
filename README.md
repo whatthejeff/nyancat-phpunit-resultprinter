@@ -1,4 +1,4 @@
-<p><img alt="Video of the Nyan Cat result printer for PHPUnit" width="421" height="159" src="https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.gif"></p>
+<p><img alt="Video of the Nyan Cat result printer for PHPUnit" src="https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.gif"></p>
 
 ## Requirements
 
