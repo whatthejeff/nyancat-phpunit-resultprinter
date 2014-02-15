@@ -15,9 +15,9 @@
         "whatthejeff/nyancat-scoreboard": "~1.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.8.*@dev",
-        "phpunit/php-code-coverage": "1.3.*@dev",
-        "phpunit/phpunit-mock-objects": "1.3.*@dev",
+        "phpunit/phpunit": "4.0.*@dev",
+        "phpunit/php-code-coverage": "2.0.*@dev",
+        "phpunit/phpunit-mock-objects": "2.0.*@dev",
         "pear-pear/pear": "1.9.4"
     },
     "repositories": [
