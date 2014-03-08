@@ -14,7 +14,7 @@ PHPUnit_TextUI_Command::main();
 --EXPECTF--
 PHPUnit %s by Sebastian Bergmann.
 
-Configuration read from %s
+Configuration read from %a
 
 
 Starting test 'ResultPrinterTest::testSuccess'.

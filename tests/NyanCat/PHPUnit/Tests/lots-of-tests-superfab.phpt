@@ -15,7 +15,7 @@ PHPUnit_TextUI_Command::main();
 --EXPECTF--
 PHPUnit %s by Sebastian Bergmann.
 
-Configuration read from %s
+Configuration read from %a
 
  [32m0[0m
  [31m0[0m
