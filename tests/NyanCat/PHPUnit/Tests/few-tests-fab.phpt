@@ -93,7 +93,7 @@ Configuration read from %a
  
 
 
-Time: %i %s, Memory: %sMb
+Time: %s, Memory: %sMb
 
 There was 1 error:
 

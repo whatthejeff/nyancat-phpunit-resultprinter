@@ -28,7 +28,7 @@ Starting test 'ResultPrinterTest::testSkipped'.
 Starting test 'ResultPrinterTest::testIncomplete'.
 [33;1mI[0m
 
-Time: %i %s, Memory: %sMb
+Time: %s, Memory: %sMb
 
 There was 1 error:
 
