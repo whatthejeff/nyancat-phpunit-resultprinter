@@ -33,7 +33,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * The Nyan Cat scoreboard.
      *
-     * @var NyanCat\Scoreboard
+     * @var \NyanCat\Scoreboard
      */
     private $scoreboard;
 
