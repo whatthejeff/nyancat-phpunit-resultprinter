@@ -30,6 +30,12 @@ attribute to the `<phpunit>` element in your `phpunit.xml` file:
 
     bootstrap="vendor/autoload.php"
 
+**NOTE:** Windows shell (cmd.exe) is not rendering ANSI characters correctly.
+However, there is a nice tool [ansicon](https://github.com/adoxa/ansicon) which handles this issues.
+After installing it your Windows shell will be able to render The Nyan Cat:
+
+    ansicon -i
+
 ## Tests
 
 [![Build Status](https://travis-ci.org/whatthejeff/nyancat-phpunit-resultprinter.png?branch=master)](https://travis-ci.org/whatthejeff/nyancat-phpunit-resultprinter)
@@ -47,3 +53,4 @@ glorious [mocha/nyan.js](https://github.com/visionmedia/mocha/blob/master/lib/re
 ## License
 
 The Nyan Cat result printer for PHPUnit is licensed under the [MIT license](LICENSE).
+
