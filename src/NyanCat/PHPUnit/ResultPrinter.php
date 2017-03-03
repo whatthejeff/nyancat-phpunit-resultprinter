@@ -17,6 +17,10 @@ use NyanCat\Team;
 use NyanCat\Scoreboard;
 
 use Fab\Factory as FabFactory;
+use PHPUnit\Framework\AssertionFailedError;
+use PHPUnit\Framework\Test;
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestSuite;
 
 /**
  * Mmmm poptarts...
@@ -28,7 +32,7 @@ use Fab\Factory as FabFactory;
  *
  * @author Jeff Welch <whatthejeff@gmail.com>
  */
-class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
+class ResultPrinter extends \PHPUnit\TextUI\ResultPrinter
 {
     /**
      * The Nyan Cat scoreboard.
@@ -91,7 +95,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function addError(\PHPUnit_Framework_Test $test, \Exception $e, $time)
+    public function addError(Test $test, \Exception $e, $time)
     {
         if ($this->debug) {
             return parent::addError($test, $e, $time);
@@ -104,7 +108,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function addFailure(\PHPUnit_Framework_Test $test, \PHPUnit_Framework_AssertionFailedError $e, $time)
+    public function addFailure(Test $test, AssertionFailedError $e, $time)
     {
         if ($this->debug) {
             return parent::addFailure($test, $e, $time);
@@ -117,7 +121,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function addIncompleteTest(\PHPUnit_Framework_Test $test, \Exception $e, $time)
+    public function addIncompleteTest(Test $test, \Exception $e, $time)
     {
         if ($this->debug) {
             return parent::addIncompleteTest($test, $e, $time);
@@ -130,7 +134,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function addSkippedTest(\PHPUnit_Framework_Test $test, \Exception $e, $time)
+    public function addSkippedTest(Test $test, \Exception $e, $time)
     {
         if ($this->debug) {
             return parent::addSkippedTest($test, $e, $time);
@@ -143,7 +147,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function startTestSuite(\PHPUnit_Framework_TestSuite $suite)
+    public function startTestSuite(TestSuite $suite)
     {
         if ($this->debug) {
             return parent::startTestSuite($suite);
@@ -158,7 +162,7 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function endTest(\PHPUnit_Framework_Test $test, $time)
+    public function endTest(Test $test, $time)
     {
         if ($this->debug) {
             return parent::endTest($test, $time);
@@ -168,12 +172,8 @@ class ResultPrinter extends \PHPUnit_TextUI_ResultPrinter
             $this->writeProgress('pass');
         }
 
-        if ($test instanceof \PHPUnit_Framework_TestCase) {
+        if ($test instanceof TestCase) {
             $this->numAssertions += $test->getNumAssertions();
-        }
-
-        else if ($test instanceof \PHPUnit_Extensions_PhptTestCase) {
-            $this->numAssertions++;
         }
 
         $this->lastTestFailed = FALSE;
