@@ -44,7 +44,7 @@ class ResultPrinter extends \PHPUnit\TextUI\ResultPrinter
     /**
      * {@inheritdoc}
      */
-    public function __construct($out = NULL, $verbose = FALSE, $colors = FALSE, $debug = FALSE)
+    public function __construct($out = NULL, $verbose = FALSE, $colors = self::COLOR_DEFAULT, $debug = FALSE, $numberOfColumns = 80, $reverse = false)
     {
         $this->scoreboard = new Scoreboard(
             new Cat(),
@@ -62,7 +62,7 @@ class ResultPrinter extends \PHPUnit\TextUI\ResultPrinter
             array($this, 'write')
         );
 
-        parent::__construct($out, $verbose, true, $debug);
+        parent::__construct($out, $verbose, self::COLOR_ALWAYS, $debug);
     }
 
     /**
