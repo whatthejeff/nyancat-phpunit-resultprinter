@@ -13,9 +13,7 @@ require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/vendor/au
 PHPUnit\TextUI\Command::main();
 ?>
 --EXPECTF--
-PHPUnit %s by Sebastian Bergmann.
-
-Configuration read from %a
+PHPUnit %s by Sebastian Bergmann and contributors.
 
  [32m0[0m
  [31m0[0m
@@ -35,6 +33,6 @@ Configuration read from %a
  
 
 
-Time: %s, Memory: %sMb
+Time: %s, Memory: %s
 
-[30;43mNo tests executed![0m
+[30;43mNo tests executed!%s

@@ -13,9 +13,7 @@ require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/vendor/au
 PHPUnit\TextUI\Command::main();
 ?>
 --EXPECTF--
-PHPUnit %s by Sebastian Bergmann.
-
-Configuration read from %a
+PHPUnit %s by Sebastian Bergmann and contributors.
 
  [32m0[0m
  [31m0[0m
@@ -335,7 +333,7 @@ Configuration read from %a
  
 
 
-Time: %s, Memory: %sMb
+Time: %s, Memory: %s
 
 There were 5 errors:
 
@@ -392,6 +390,6 @@ Failed asserting that false is true.
 Failed asserting that false is true.
 
 %s:%i
-[37;41m                                                                             [0m
-[37;41mFAILURES!                                                                    [0m
-[37;41mTests: 25, Assertions: 10, Failures: 5, Errors: 5, Incomplete: 5, Skipped: 5.[0m
+
+[37;41mERRORS![0m
+[37;41mTests: 25[0m[37;41m, Assertions: 10[0m[37;41m, Errors: 5[0m[37;41m, Failures: 5[0m[37;41m, Skipped: 5[0m[37;41m, Incomplete: 5[0m[37;41m.[0m
