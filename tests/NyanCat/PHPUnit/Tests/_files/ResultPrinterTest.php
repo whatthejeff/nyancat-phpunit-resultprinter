@@ -1,6 +1,6 @@
 <?php
 
-    class ResultPrinterTest extends PHPUnit_Framework_TestCase
+    class ResultPrinterTest extends PHPUnit\Framework\TestCase
     {
         public function testSuccess()
         {

@@ -10,12 +10,10 @@ $_SERVER['argv'][4] = 'notests';
 $_SERVER['argv'][5] = dirname(__FILE__) . '/_files/ResultPrinterTest.php';
 
 require_once dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/vendor/autoload.php';
-PHPUnit_TextUI_Command::main();
+PHPUnit\TextUI\Command::main();
 ?>
 --EXPECTF--
-PHPUnit %s by Sebastian Bergmann.
-
-Configuration read from %a
+PHPUnit %s by Sebastian Bergmann and contributors.
 
  [32m0[0m
  [31m0[0m
@@ -35,6 +33,6 @@ Configuration read from %a
  
 
 
-Time: %s, Memory: %sMb
+Time: %s, Memory: %s
 
 [30;43mNo tests executed![0m
