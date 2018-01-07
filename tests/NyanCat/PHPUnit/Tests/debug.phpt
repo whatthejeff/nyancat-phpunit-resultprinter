@@ -14,17 +14,17 @@ PHPUnit\TextUI\Command::main();
 --EXPECTF--
 PHPUnit %s by Sebastian Bergmann and contributors.
 
+Test 'ResultPrinterTest::testSuccess' started
+Test 'ResultPrinterTest::testSuccess' ended
+Test 'ResultPrinterTest::testFailure' started
+Test 'ResultPrinterTest::testFailure' ended
+Test 'ResultPrinterTest::testError' started
+Test 'ResultPrinterTest::testError' ended
+Test 'ResultPrinterTest::testSkipped' started
+Test 'ResultPrinterTest::testSkipped' ended
+Test 'ResultPrinterTest::testIncomplete' started
+Test 'ResultPrinterTest::testIncomplete' ended
 
-Starting test 'ResultPrinterTest::testSuccess'.
-.
-Starting test 'ResultPrinterTest::testFailure'.
-[41;37mF[0m
-Starting test 'ResultPrinterTest::testError'.
-[31;1mE[0m
-Starting test 'ResultPrinterTest::testSkipped'.
-[36;1mS[0m
-Starting test 'ResultPrinterTest::testIncomplete'.
-[33;1mI[0m                                                               5 / 5 (100%)
 
 Time: %s, Memory: %s
 
