@@ -7,24 +7,31 @@
     "authors": [
         {
             "name": "Jeff Welch",
-            "email": "whatthejeff@gmail.com"
+            "email": "whatthejeff@gmail.com",
+            "homepage": "http://whatthejeff.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/whatthejeff/nyancat-phpunit-resultprinter/issues"
+    },
     "require": {
-        "php": ">=5.3.3",
-        "whatthejeff/nyancat-scoreboard": "~1.1"
+        "php": "^5.3.3 || ^7.0",
+        "whatthejeff/nyancat-scoreboard": "^1.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.2"
+        "phpunit/phpunit": "^4.8.36 || ^5.7.21"
     },
     "autoload": {
-        "psr-0": {
-            "NyanCat": "src/"
+        "psr-4": {
+            "NyanCat\\": "src/NyanCat"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.2.x-dev"
+            "dev-master": "1.3-dev"
         }
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }

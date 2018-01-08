@@ -1,6 +1,11 @@
 ChangeLog
 =========
 
+1.3.0
+-----
+
+* Sync with PHPUnit 4/5.
+
 1.2.0
 -----
 
