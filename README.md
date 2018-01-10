@@ -4,9 +4,12 @@
 
 The Nyan Cat result printer for PHPUnit requires:
 
- * PHP 5.3.3 or later.
+ * PHP 7+.
+ * PHPUnit 6+.
  * A terminal emulator with support for ANSI escape sequences, including color
    and cursor control.
+
+Use version `^1.3` to support PHPUnit 4.8+ / 5+.
 
 **NOTE:** By default, the Windows console does not support ANSI escape
 sequences. If you'd like to use the Nyan Cat result printer on Windows, you
@@ -19,12 +22,12 @@ may want to try one of the following solutions:
 
 The recommended way to install the Nyan Cat result printer for PHPUnit is
 [through composer](http://getcomposer.org). Just create a `composer.json` file
-and run the `php composer.phar install` command to install it:
+and run the `composer install` command to install it:
 
 ~~~json
 {
     "require-dev": {
-        "whatthejeff/nyancat-phpunit-resultprinter": "~1.2"
+        "whatthejeff/nyancat-phpunit-resultprinter": "^2.0"
     }
 }
 ~~~
@@ -47,8 +50,8 @@ attribute to the `<phpunit>` element in your `phpunit.xml` file:
 
 To run the test suite, you need [composer](http://getcomposer.org).
 
-    $ php composer.phar install
-    $ vendor/bin/phpunit
+    $ composer install
+    $ composer test
 
 ## Acknowledgements
 

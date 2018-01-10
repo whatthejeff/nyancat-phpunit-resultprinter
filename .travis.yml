@@ -1,10 +1,14 @@
 language: php
 
+sudo: false
+dist: trusty
+
 php:
-    - 7.0
-    - 7.1
+  - 7.0
+  - 7.1
+  - nightly
 
 before_script:
-    - composer install --prefer-source
+  - composer install --prefer-source
 
-script: vendor/bin/phpunit
+script: composer test

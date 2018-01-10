@@ -1,6 +1,16 @@
 ChangeLog
 =========
 
+2.0.0
+-----
+
+* Merged #12: Add support for PHPUnit 6 (thanks @johnkary and @JeroenDeDauw)
+
+1.3.0
+-----
+
+* Sync with PHPUnit 4/5.
+
 1.2.0
 -----
 
