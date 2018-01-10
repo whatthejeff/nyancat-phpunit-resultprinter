@@ -1,10 +1,11 @@
-<p><img alt="Video of the Nyan Cat result printer for PHPUnit" src="https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/master/nyan.gif"></p>
+<p><img alt="Video of the Nyan Cat result printer for PHPUnit" src="https://github.com/whatthejeff/nyancat-phpunit-resultprinter/raw/1.3/nyan.gif"></p>
 
 ## Requirements
 
 The Nyan Cat result printer for PHPUnit requires:
 
- * PHP 5.3.3+ or PHP 7.0+.
+ * PHP 5.3.3+ / 7+.
+ * PHPUnit 4.8+ / 5+
  * A terminal emulator with support for ANSI escape sequences, including color
    and cursor control.
 
